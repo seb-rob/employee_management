@@ -1,0 +1,42 @@
+/* Sidebar.css */
+#sidebar {
+    width: 200px;
+    /* Set the specific width of the sidebar */
+    min-height: 100vh;
+    /* Make the sidebar full height */
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px;
+    color: #333;
+    /* Default text color */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    background-color: #007bff;
+    /* Background color on hover */
+    color: #fff;
+    /* Text color on hover */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 0;
+        /* Set the width to 100% on smaller screens */
+        z-index: 1;
+        /* Ensure the sidebar overlays the content */
+        position: fixed;
+        /* Fix the position of the sidebar */
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        /* Hide horizontal scrollbar */
+        transition: 0.5s;
+        /* Smooth transition for the sidebar */
+    }
+}
