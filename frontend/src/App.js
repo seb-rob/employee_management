@@ -1,4 +1,3 @@
-import './App.css';
 import LoginPage from './Routes/LoginPage/LoginPage';
 import { Route, Routes, useNavigate  } from 'react-router-dom';
 import UserProfileComponent from './components/Profile/Profile';
